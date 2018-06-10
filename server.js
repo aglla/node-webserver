@@ -54,6 +54,13 @@ app.get('/about', function(req,res){
 	});
 });
 
+app.get('/projects', function(req, res){
+	res.render('projects.hbs',{
+		project: "node-webserver test"
+	});
+});
+
+
 app.get('/bad', function(req, res){
 	res.send({error:"not found!"})
 })
